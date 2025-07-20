@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fleur+De+Leah&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #3A0519;
+    color: white;
+    box-sizing: border-box;
+    height: 100vh;
+
+}
+
+.titulo {
+    background-color: #A53860;
+    margin: 0px;
+    border: 20px;
+    padding: 30px;
+    font-size: 50px;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.subtitulo {
+    justify-content: center;
+    font-size: 30px;
+    margin: 2%;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.conteudo {
+    margin: 2%;
+}
+
+.imagem {
+    height: 600px;
+}
+
+.destaque-texto {
+    color: #A53860;
+}
+
+.informacoes__subtitulo {
+    font-size: 25px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.informacoes__paragrafo {
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    border-color: #EF88AD;
+    color: #A53860;
+}
