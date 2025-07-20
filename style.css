@@ -42,10 +42,14 @@ body {
 
 .conteudo {
     margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .imagem {
     height: 600px;
+    border-radius: 20px;
 }
 
 .destaque-texto {
@@ -70,4 +74,20 @@ body {
 a {
     border-color: #EF88AD;
     color: #A53860;
+}
+
+.links { 
+    display: flex;
+    justify-content: space-around;
+}
+.instagram, .github {
+    background-color: #A53860;
+    color: white;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 18px 0;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
