@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fleur+De+Leah&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fleur+De+Leah&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,53 +8,70 @@ body {
     background-color: #3A0519;
     color: white;
     box-sizing: border-box;
-    height: 100vh;
-
 }
 
-.titulo {
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
     background-color: #A53860;
-    margin: 0px;
-    border: 20px;
-    padding: 30px;
-    font-size: 50px;
-    font-family: "Fleur De Leah", cursive;
-     font-weight: 400;  /*Define o peso da fonte*/
-    font-style: normal; 
+    padding: 1.5%;
 }
 
-.subtitulo {
-    justify-content: center;
+.cabecalho__titulo {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__menu__links {
+    color: #3A0519;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cabecalho__menu__links:hover {
+    color: #4c0920;
+}
+
+
+.apresentacao__conteudo__subtitulo {
+    display: flex;
+    gap: 60px;
     font-size: 30px;
-    margin: 2%;
-    font-family: "Bungee", sans-serif;
+    font-family: "Krona One", sans-serif;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
 }
 
 .apresentacao {
+    padding: 5% 9%;
     display: flex;
     align-items: center; /*Posiciona os elementos no centro da tela*/
-     justify-content: space-between; /* Posiciona os elemento com espaçamento igual entre eles*/
-    margin: 5%;
+    justify-content: space-between; /* Posiciona os elemento com espaçamento igual entre eles*
 }
 
 .apresentacao__conteudo {
     margin: 2%;
     display: flex;
-     flex-direction: column;  /*Muda o fluxo da tela para vertical.*/
+    flex-direction: column;  /*Muda o fluxo da tela para vertical.*/
     gap: 20px;
 }
 
-.apresentacao__conteudo__subtitulo {
-    font-size: 25px;
-    font-family: "Bungee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .apresentaca__conteudo__texto {
-    font-size: 26px;
+    font-size: 28px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -62,32 +79,64 @@ body {
 }
 
 .imagem {
-    height: 600px;
-     border-radius: 20px;  /*Arredonda a borda*/
+    height: 650px;
+    border-radius: 20px;  /*Arredonda a borda*/
 }
 
 .destaque-texto {
     color: #A53860;
 }
 
-a {
-    border-color: #EF88AD;
-    color: #A53860;
-}
-
-.links { 
+.apresentcao__links { 
     display: flex;
     justify-content: space-around;
-
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
-.instagram, .github {
-    background-color: #A53860;
-    color: white;
-    width: 240px;
+
+.links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.apresentcao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 3px solid #EF88AD;
+    color: #EF88AD;
+    width: 378px;
     text-align: center;
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 8px;
     padding: 18px 0;  /*Espaçamento entre o item e a borda*/
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    height: 50px;
+}
+
+img {
+    height: 40px;
+    border-radius: 16px;
+}
+
+.apresentcao__links__link:hover {
+    background-color: #4c0920;
+    color: #b8435c;
+
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #A53860;
+    padding: 1.5%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
